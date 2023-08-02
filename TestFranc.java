@@ -6,9 +6,9 @@ import static org.junit.Assert.assertTrue;
 public class TestFranc {
   @Test
   public void testFrancMultiplication() {
-    Franc five = new Franc(5);
-    assertEquals(new Franc(10), five.times(2));
-    assertEquals(new Franc(15), five.times(3));
+    Money five = Money.franc(5);
+    assertEquals(Money.franc(10), five.times(2));
+    assertEquals(Money.franc(15), five.times(3));
   }
 
   @Test
